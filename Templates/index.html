@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Logis Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+    {% load static %}
+
+  <!-- Favicons -->
+  <link href={% static 'assets/img/favicon.png' %} rel="icon">
+  <link href={% static 'assets/img/apple-touch-icon.png' %} rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href={% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %} rel="stylesheet">
+  <link href={% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %} rel="stylesheet">
+  <link href={% static 'assets/vendor/aos/aos.css' %} rel="stylesheet">
+  <link href={% static 'assets/vendor/fontawesome-free/css/all.min.css' %} rel="stylesheet">
+  <link href={% static 'assets/vendor/glightbox/css/glightbox.min.css' %} rel="stylesheet">
+  <link href= {% static 'assets/vendor/swiper/swiper-bundle.min.css' %}rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href={% static 'assets/css/main.css' %} rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Logis
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Swift</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href= {% url 'home' %} class="active">Home<br></a></li>
+          <li><a href={% url 'about' %}>About</a></li>
+          <li><a href={% url 'services' %}>Services</a></li>
+          <li><a href={% url 'price' %}>Pricing</a></li>
+          </li>
+          <li><a href={% url 'contact' %}>Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+        <a class="btn-getstarted" href={% url 'book' %}>BOOK YOUR SHIPPING</a>
+
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src={% static 'assets/img/world-dotted-map.png' %} alt="" class="hero-bg" data-aos="fade-in">
+
+      <div class="container">
+        <div class="row gy-4 d-flex justify-content-between">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h2 data-aos="fade-up">Your Lightning Fast Delivery Partner</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Global delivery made fast and easy .Your packages no matter the size ,anywhere , anytime.We make the world smaller one delivery at a time</p>
+
+
+            <div class="row gy-4" data-aos="fade-up" data-aos-delay="300">
+
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter">232</span>
+                  <p>Clients</p>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter">521</span>
+                  <p>Projects</p>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0" class="purecounter">1453</span>
+                  <p>Support</p>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter">32</span>
+                  <p>Workers</p>
+                </div>
+              </div><!-- End Stats Item -->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+            <img src={% static 'assets/img/shipping photo.jpeg' %} class="img-fluid mb-3 mb-lg-0" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
+            <div>
+              <h4 class="title">Expert Packaging</h4>
+              <p class="description">Safety of goods starts with expert packaging.Premium materials tailored to each item .Our skilled team handles everything with precision ,ensuring your valuables are securely packed and ready for travel.</p>
+              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-truck"></i></div>
+            <div>
+              <h4 class="title">Secure Travel</h4>
+              <p class="description"> Packaged  goods embark on their journey through our trusted and secure transportation network. We monitor every step, ensuring safe passage whether they're crossing cities or continents. With our attention to detail and commitment to security, your packages travel with the same care you’d give them.
+</p>
+              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-truck-ramp-box"></i></div>
+            <div>
+              <h4 class="title">Reliable delivery</h4>
+              <p class="description">our delivery process is designed to bring your packages safely to their final destination. Our professional couriers ensure timely and secure handoff, so you can have peace of mind knowing your items arrive exactly as they left. At SWIFT, we deliver not just packages, but peace of mind.</p>
+              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first" data-aos="fade-up" data-aos-delay="200">
+            <img src={% static 'assets/img/delivery guy.jpeg' %} class="img-fluid" alt="">
+            <a href=https://youtu.be/cNOKQIw81SE class="glightbox pulsating-play-btn"></a>
+          </div>
+
+          <div class="col-lg-6 content order-last  order-lg-first" data-aos="fade-up" data-aos-delay="100">
+            <h3>About Us</h3>
+            <p>
+                At Swift, we make international delivery seamless and stress-free. From expert packaging to fast, reliable shipping, we ensure your goods arrive safely and on time, anywhere in the world.
+                Trust us to deliver with care and precision—every package, every time.
+            </p>
+            <ul>
+              <li>
+                <i class="bi bi-diagram-3"></i>
+                <div>
+                  <h5>Our Trusted Network</h5>
+                  <p>At [Your Delivery Agency Name], we make international delivery seamless and stress-free. From expert packaging to fast, reliable shipping, we ensure your goods arrive safely and on time, anywhere in the world.
+                      Trust us to deliver with care and precision—every package, every time.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="bi bi-fullscreen-exit"></i>
+                <div>
+                  <h5>Accesibility</h5>
+                  <p>With our advanced tracking system, you can monitor your cargo in real-time as it moves through our secure international network, giving you complete visibility and peace of mind from the moment it leaves your hands until it reaches its final destination.</p>
+                </div>
+              </li>
+              <li>
+                <i class="bi bi-broadcast"></i>
+                <div>
+                  <h5>Track your goods</h5>
+                  <p>With our advanced tracking system, you can monitor your cargo in real-time as it moves through our secure international network, giving you complete visibility and peace of mind from the moment it leaves your hands until it reaches its final destination.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>Our Services<br></span>
+        <h2>Our Services</h2>
+        <p>Uncompromised Quality, Every Step of the Way.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <div class="card-img">
+                <img src={% static 'assets/img/storage.jpg' %} alt="" class="img-fluid">
+              </div>
+              <h3>Storage</h3>
+              <p>Our state-of-the-art storage facilities are designed to keep your goods and packages secure, organized, and in optimal condition. With climate control, advanced security systems, and 24/7 monitoring, we ensure that even the most sensitive items are protected. Whether short-term or long-term, our storage solutions offer the peace of mind you need when your goods are in our care.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <div class="card-img">
+                <img src={% static 'assets/img/logistics.jpeg' %} alt="" class="img-fluid">
+              </div>
+              <h3><a href="#" class="stretched-link">Logistics</a></h3>
+              <p>Our transport agency’s logistics are meticulously designed to ensure seamless coordination, efficient routing, and timely delivery, all while maintaining the highest standards of safety and reliability throughout the entire supply chain.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <div class="card-img">
+                <img src={% static 'assets/img/container.jpg' %} alt="" class="img-fluid">
+              </div>
+              <h3><a href="#" class="stretched-link">Cargo</a></h3>
+              <p>At our agency, cargo is handled with the utmost care and precision, from expert packing to careful loading and unloading, ensuring that every item is protected and arrives in perfect condition, no matter the journey.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card">
+              <div class="card-img">
+                <img src={% static 'assets/img/truck.jpeg' %} alt="" class="img-fluid">
+              </div>
+              <h3><a href="#" class="stretched-link">Travel</a></h3>
+              <p>Experience Seamless Journeys with Our Perfectly Integrated Transport System—Effortlessly Connecting Road, Air, Sea, and Rail for Swift and Reliable Delivery Everywhere</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="card">
+              <div class="card-img">
+                <img src={% static 'assets/img/package.webp' %} alt="" class="img-fluid">
+              </div>
+              <h3>Packaging</h3>
+              <p>Our perfect packaging system combines top-quality materials with precise, customized solutions to ensure every item is securely protected and arrives in pristine condition, no matter the distance.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="card">
+              <div class="card-img">
+                <img src={% static 'assets/img/warehouse.jpg' %} alt="" class="img-fluid">
+              </div>
+              <h3><a href="#" class="stretched-link">Warehousing</a></h3>
+              <p>Our ideal chain of warehouses operates with unparalleled efficiency, featuring strategically located facilities, advanced inventory management, and seamless coordination to ensure timely, secure, and optimized storage and distribution of goods.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>Features</span>
+        <h2>Features</h2>
+        <p>Precision, Reliability, and Seamless Delivery—The Hallmarks of Perfect Transportation.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+            <img src={% static 'assets/img/DOOR.jpeg' %} class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+            <h3>Door deliveries</h3>
+            <p class="fst-italic">
+             Effortless Door-to-Door Delivery—Fast, Secure, and On Time. Your Package, Perfectly Delivered, Every Time.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i><span>open channels for customer communication to address customer queries</span></li>
+              <li><i class="bi bi-check"></i> <span>Track your packages from the comfort of your home.</span></li>
+              <li><i class="bi bi-check"></i> <span>Skilled customer service for resolving any issues effeciently.</span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src={% static 'assets/img/online.jpeg' %} class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
+            <h3>Accesibility</h3>
+            <p class="fst-italic">
+              Unlock Exclusive Services Anytime, Anywhere—Simply Online.
+            </p>
+            <p>
+              Our online platform offers unmatched accessibility and ease of use, allowing you to effortlessly access all our services from the comfort of your home or on the go.
+                With a user-friendly interface, you can quickly navigate through features, place orders, track shipments, and manage your account with just a few clicks.
+                Whether you need instant support or exclusive service options, our online tools are designed to provide a seamless and convenient experience, ensuring you stay connected and in control every step of the way.
+            </p>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
+            <img src={% static 'assets/img/handle.jpeg' %} class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7" data-aos="fade-up">
+            <h3>Package Handling</h3>
+            <p>Our streamlined process ensures a smooth transition of packages to their owners, from efficient handling and secure transit to prompt and reliable delivery. Each step is carefully managed to guarantee that your package arrives safely and on time, culminating in a seamless handoff with a signature confirmation to verify successful delivery.</p>
+            <ul>
+              <li><i class="bi bi-check"></i> <span>Our agency uses top-quality materials and expert packing techniques to ensure every package is securely protected during transit.</span></li>
+              <li><i class="bi bi-check"></i><span> We employ advanced tracking systems that provide real-time updates, so you can monitor your package's journey every step of the way.</span></li>
+              <li><i class="bi bi-check"></i> <span>Our dedicated delivery team ensures that each package is handled with care and delivered promptly, with a signature confirmation to verify successful receipt</span>.</li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
+            <img src={% static 'assets/img/Cargo.jpeg' %} class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
+            <h3>Versatile Transportation Solutions: Connecting Every Route"</h3>
+            <p class="fst-italic">
+             One Solution, Every Route—Seamless Transport Across All Modes.
+            </p>
+            <p>
+              Experience flawless package delivery with our integrated transport system—where road, rail, air, and sea unite for seamless, secure, and speedy service.
+            </p>
+          </div>
+        </div><!-- Features Item -->
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>Pricing</span>
+        <h2>Pricing</h2>
+        <p>Exceptional Service, Unbeatable Pricing—Quality Without Compromise.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Basic Plan</h3>
+              <h4><sup>$</sup>30<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Standard Delivery</span></li>
+                <li><i class="bi bi-check"></i> <span>Basic Packaging</span></li>
+                <li><i class="bi bi-check"></i> <span>Customer Support & delivery notifications</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Exclusive Discounts</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Insurance Coverage</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Air services</span></li>
+              </ul>
+              <a href={% url 'basic' %} class="buy-btn">Apply</a>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item featured">
+              <h3>Premium</h3>
+              <h4><sup>$</sup>70<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Flexible Delivery Options</span></li>
+                <li><i class="bi bi-check"></i> <span>Exclusive Discounts</span></li>
+                <li><i class="bi bi-check"></i> <span>Expedited Delivery</span></li>
+                <li><i class="bi bi-check"></i> <span>Premium packaging services</span></li>
+                <li><i class="bi bi-check"></i> <span>24/7 customer support</span></li>
+              </ul>
+              <a href={% url 'premium' %} class="buy-btn">Apply</a>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3>Swift Economy</h3>
+              <h4><sup>$</sup>150<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Comprehensive Insurance</span></li>
+                <li><i class="bi bi-check"></i> <span>Personalized customer services </span></li>
+                <li><i class="bi bi-check"></i> <span>Enhanced Tracking</span></li>
+                <li><i class="bi bi-check"></i> <span>Luxury Packaging</span></li>
+                <li><i class="bi bi-check"></i> <span>Exclusive Concierge Services</span></li>
+              </ul>
+              <a href={% url 'plus' %} class="buy-btn">Apply</a>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+
+      <img src={% static 'assets/img/testimonials-bg.jpg' %} class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src={% static 'assets/img/testimonials/testimonials-1.jpg' %} class="testimonial-img" alt="">
+                <h3>Peter Heffley</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>As CEO, I am incredibly proud of the exceptional service and dedication our team brings to every journey. At Swift, we prioritize customer satisfaction, ensuring that every trip is seamless, personalized, and unforgettable. Our commitment to excellence and attention to detail make us a trusted partner in all your travel adventures.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src={% static 'assets/img/testimonials/testimonials-2.jpg' %} class="testimonial-img" alt="">
+                <h3>Sarah Hues</h3>
+                <h4>Head of Operations</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>As Head of Operations, I’m committed to ensuring that every aspect of your travel experience with us runs smoothly and efficiently. Our team works tirelessly behind the scenes to coordinate logistics, ensuring that every detail is perfect from start to finish. At [Travel Agency Name], we strive to make your journey not just enjoyable, but extraordinary..</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Customer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>The service from Swift exceeded my expectations. They handled my shipment with care and kept me informed every step of the way. My package arrived on time and in perfect condition—couldn’t ask for better!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Customer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I’m thoroughly impressed with Swift. Their team was professional, the tracking was accurate, and the delivery was right on schedule. It's clear they prioritize customer satisfaction. I’ll definitely use their services again!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Customer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Exceptional service from start to finish! Swift made the entire process smooth and stress-free. The packaging was secure, and the delivery was prompt. I highly recommend them for any transportation needs.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>Frequently Asked Questions</span>
+        <h2>Frequently Asked Questions</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>What are the estimated delivery timelines, and how can I monitor the status of my shipment throughout the process?</h3>
+                <div class="faq-content">
+                  <p>Delivery timelines vary based on the destination and service level chosen. We provide real-time tracking so you can monitor your shipment’s progress at every stage, from departure to arrival.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>What protocols are in place to guarantee the integrity and safety of my items during transit?</h3>
+                <div class="faq-content">
+                  <p>We utilize advanced packaging techniques, secure handling procedures, and cutting-edge tracking systems to ensure your items remain safe and intact throughout their journey.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Could you explain any additional charges associated with international shipping or faster delivery options?</h3>
+                <div class="faq-content">
+                  <p>Additional charges may apply for international shipments due to customs duties, taxes, and handling fees. Expedited delivery services also incur extra costs based on the speed and distance required. Our team can provide a detailed breakdown tailored to your specific needs.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>How do you handle unforeseen delays or issues that might arise during the shipping process?</h3>
+                <div class="faq-content">
+                  <p> In the event of unforeseen delays or issues, we promptly notify you with updates and work swiftly to resolve the situation. Our team is dedicated to minimizing disruptions and ensuring your package reaches its destination as quickly and safely as possible.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>What differentiates your transport agency from others in terms of service quality and customer experience?</h3>
+                <div class="faq-content">
+                  <p>Our agency stands out by offering personalized service, advanced tracking technology, and a commitment to safety and reliability. We focus on delivering a seamless customer experience, ensuring that every shipment is handled with the highest level of care and professionalism.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Swift</span>
+          </a>
+          <p>Your Trusted Partner in Seamless, Reliable Delivery Solutions.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href={% url 'home' %}>Home</a></li>
+            <li><a href={% url 'about' %}>About us</a></li>
+            <li><a href={% url 'services' %}>Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Logistics management</a></li>
+            <li><a href="#">Deliveries</a></li>
+            <li><a href="#">Importation</a></li>
+            <li><a href="#">Exportation</a></li>
+            <li><a href="#">Freight transport</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>A108 Mombasa</p>
+          <p>Mombasa, Mombasa 00200</p>
+          <p>Kenya</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+254789098776</span></p>
+          <p><strong>Email:</strong> <span>swifttravels.org.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Logis</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src={% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}></script>
+  <script src={% static 'assets/vendor/php-email-form/validate.js' %}></script>
+  <script src={% static 'assets/vendor/aos/aos.js' %}></script>
+  <script src={% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}></script>
+  <script src={% static 'assets/vendor/glightbox/js/glightbox.min.js' %}></script>
+  <script src={% static 'assets/vendor/swiper/swiper-bundle.min.js' %}></script>
+
+  <!-- Main JS File -->
+  <script src={% static 'assets/js/main.js' %}></script>
+
+</body>
+
+</html>
